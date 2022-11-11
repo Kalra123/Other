@@ -1,0 +1,250 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* RESET */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.container{
+    width: 1500px;
+    margin: auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,255, 255, 0.8) url(img/bg-main.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    width: 150px;
+}
+header .container .logo a {}
+header .container .logo a img {
+    width: 100%;
+}
+
+/* MAIN_MENU */
+
+.main_menu {}
+.main_menu ul{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+.main_menu ul li{}
+.main_menu ul li a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search {}
+.search i {
+    color: #fff;
+    font-size: 18px;
+}
+/* main_1 */
+
+.main_1 {
+    margin-top: 5%;
+}
+.main_1 .slider{}
+.main_1 .slider .slick-slide{
+    display: flex;
+    overflow: hidden;
+}
+/* left */ 
+
+.left {
+    width: 50%;
+    position: relative;
+}
+.left .nike_shoes{
+    
+    width: 120%;
+    padding-top: 160px;
+}
+.left .nike_shoes img{
+    padding-left: 123px;
+    width: 80%;
+}
+.main_1 .slider .slick-active .left .nike_shoes {
+    animation: fadeInR 0.5s 0.5s both;
+}
+.main_1 .slider .slick-active .left .nike_tit{
+    animation: fadeInR 0.5s 0.9s both;
+}
+/* right */
+.right {
+    width: 50%;
+    position: relative;
+}
+.right .right_text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 70%;
+}
+.right .right_text h1{
+    font-style: italic;
+    color: #fff;
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.right .right_text h2{
+    position: absolute;
+    top: 45px;
+    left: 225px;
+    font-size: 20px;
+    font: weight 500px;
+}
+.right .right_text h3{
+    position: absolute;
+    top: 102px;
+    left: 4px;
+    font-size: 16px;
+}
+.right .right_text h4{
+    position: absolute;
+    top: 151px;
+    left: 2px;
+    font-size: 16px;
+}
+.right .right_text h5{
+    position: absolute;
+    top: 183px;
+    left: 3px;
+    font-size: 16px;
+}
+.right .right_text h6{
+    position: absolute;
+    top: 203px;
+    left: 3px;
+    font-size: 16px;
+}
+/*nike_tit*/
+
+.left .nike_tit {
+    position: absolute;
+    left: 172px;
+    top: 122px;
+    z-index: -1;
+}
+.left .nike_tit h2{
+    font-size: 135px;
+    color: rgba(255,255, 255, 0.8);
+}
+.left .nike_tit p{
+    text-align: right;
+    font-size: 19px;
+    color: #fff;
+    letter-spacing: 19px;
+}
+/*bottom*/
+.right .buttom {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    display: flex;
+    
+
+}
+.right .bottom_btn {
+    margin-right: 1%;
+    border: 1px solid #fff;
+    background-color: yellow;
+    
+}
+.right .bottom_btn a{
+    position: relative;
+    color: black;
+    
+}
+.right .bottom_btn i{}
+
+.right .cart_btn {}
+.right .cart_btn a{}
+.right .cart_btn i{}
+
+.right .price {}
+.right .price span {}
+
+
+
+/* slick 버튼 */
+.main_1 .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    font-size: 0;
+}
+
+.main_1 .slider .slick-prev {
+    left: -2%
+}
+
+.main_1 .slider .slick-prev:after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    color: #38a385;
+    font-size: 48px;
+}
+
+
+.main_1 .slider .slick-next {
+    right: -2%
+}
+
+.main_1 .slider .slick-next:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    color: #38a385;
+    font-size: 48px;
+}
+
+@keyframes fadeInR {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
